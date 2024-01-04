@@ -82,18 +82,24 @@
 // console.log(b)
 
 
-const arr = [1,2,3,4,5,6,88]
-console.log(arr)
-arr.push(111)
-console.log(arr)
-arr.pop()
-console.log(arr)
-arr.unshift(0)   //adds elements in the begining
-console.log(arr)
+// const arr = [1,2,3,4,5,6,88]
+// console.log(arr)
+// arr.push(111)
+// console.log(arr)
+// arr.pop()
+// console.log(arr)
+// arr.unshift(0)   //adds elements in the begining
+// console.log(arr)
 
-console.log(arr.push(33))
-console.log(arr.length)
+// console.log(arr.push(33))
+// console.log(arr.length)
 
-arr.shift()  //removes elements from begining
-console.log(arr)
+// arr.shift()  //removes elements from begining
+// console.log(arr)
 
+//forEach
+const arr = ['AMAN','KUMAR','AYUSH','RAHUL']
+const func = function(ITEM,INDEX){
+    console.log(INDEX, ITEM)
+}
+arr.forEach(func)
