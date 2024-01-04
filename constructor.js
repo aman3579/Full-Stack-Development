@@ -99,7 +99,11 @@
 
 //forEach
 const arr = ['AMAN','KUMAR','AYUSH','RAHUL']
-const func = function(ITEM,INDEX){
-    console.log(INDEX, ITEM)
-}
-arr.forEach(func)
+// const callBackFun = function(ITEM,INDEX){
+//     console.log(INDEX, ITEM)
+// }
+// arr.forEach(callBackFun)
+
+arr.forEach(function(item, index){
+    console.log(item, index)
+})
