@@ -26,14 +26,14 @@
 // console.log(index1, index2, index3, index4)
 
 
-const obj = {
-    name: 'john',
-    cars:['porsche','76yh'],
-    address: {
-        city:"delhi",
-        state: "delhi",
-    }
-}
+// const obj = {
+//     name: 'john',
+//     cars:['porsche','76yh'],
+//     address: {
+//         city:"delhi",
+//         state: "delhi",
+//     }
+// }
 // const {name,cars,address} = obj
 // console.log(name)
 // console.log(cars)
@@ -44,5 +44,35 @@ const obj = {
 // const [car1,car2] = pizza
 // console.log(car1,car2)
 
-const {address:{city:personCity}} = obj
-console.log(personCity)
+// const {address:{city:personCity}} = obj
+// console.log(personCity)
+
+// const{cars:[,car2]} = obj
+// console.log(car2)
+
+// const arr = ['aman','arun', 'kumar','garvit']
+// console.log(...arr)   // ... spread operator
+
+// const arr = ['aman','arun', 'kumar','garvit']
+// console.log(4,...arr,1,2,22)   // ... spread operator
+
+// const obj = {name:'aman',
+// age:20,
+// address:{state:"delhi",
+// city:"munirka"}
+// }
+// const obj2 = {...obj,
+// hobby:'cricket'}
+// obj.name = 'joe' //this will not get updated in obj2 -- no shallow cloning
+// obj.address.city = 'mumbai'   //it will be updated in obj2
+// obj.address.state = 'Maharashtra' //these values gets changed
+// console.log(obj2)
+// obj.name='raman'
+// console.log(obj2)
+// console.log(obj)
+
+//unsure about functions parameter
+const sum= (...params)=>{
+    return params.reduce((prev,sum)=>prev+sum,0)
+}
+console.log(sum(33,44,55,66,77))
