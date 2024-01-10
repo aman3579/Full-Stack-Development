@@ -5,14 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script defer src="DOM_Methods.js"></script>
+    <style>
+        body{
+            min-height: 100vh;
+            transition: 0.5s ease-in background-color;
+        }
+        ul{
+            margin: 10px;
+        }
+        .lg{
+            font-size:2rem;
+        }
+        .md{
+            font-size: 1.5rem;
+        }
+        .sm{
+            font-size: 1 rem;
+        }
+        .red{
+            color: red;
+        }
+        .green{
+            color: green;
+        }
+        .blue{
+            color:blueviolet;
+        }
+        .dark{
+            background-color: black;
+            color: white;
+        }
+        .light{
+            background-color: antiquewhite;
+            color: black;
+        }
+    </style>
+
 </head>
-<body>
-    <h1></h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisi
-        cing elit. Cum aperiam voluptas nobis provident a
-        met cumque velit laboriosam rerum obcaecati volu
-        ptates tempora minus optio, voluptatum eum disti
-        nctio!
-         Quaerat excepturi necessitatibus sequi.</p>
+<body class="light">
+    <button class="toggle" onclick="toggleTheme()">Change Theme</button>
+    <h1 >TODO List</h1>
+    <input type="text"> <button onclick="handleClick()">Click</button>
+    <p></p>
+    <ul></ul>
 </body>
 </html>
