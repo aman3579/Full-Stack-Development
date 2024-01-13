@@ -4,7 +4,7 @@ const scissors = document.querySelector('#scissors');
 const playerScoreDisplay = document.querySelector('#player-score');
 const computerScoreDisplay = document.querySelector('#computer-score');
 const messageDisplay = document.querySelector('#message h3');
-// messageDisplay.innerHTML = "HELLO";
+
 //we have three options. Computer need to generate one value out of these three.
 const options = ['rock','paper','scissors']
 let playerScore=0, computerScore=0;
